@@ -13,7 +13,7 @@ public class Usuario {
     @Column(name = "IDUSUARIO")
     private Long idUsuario;
 
-    @Column (name = "NOMBREUSUARIO")
+    @Column (name = "NOMBREUSUARIO", unique = true)
     private String nombreUsuario;
 
     @Column (name = "PASSWORD")

@@ -1,8 +1,7 @@
 package com.example.easypos.model;
 
 import lombok.Data;
-import org.hibernate.annotations.ManyToAny;
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -19,6 +18,6 @@ public class Pedido {
     private Date fechaPedido;
 
     @ManyToOne
-    @JoinColumn(name = "USUARIOID")
-    private Usuario usuarioID;
+    @JoinColumn(name = "IDUSUARIO")
+    private Usuario idUsuario;
 }

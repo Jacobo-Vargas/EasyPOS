@@ -1,8 +1,7 @@
 package com.example.easypos.model;
 
 import lombok.Data;
-
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Data

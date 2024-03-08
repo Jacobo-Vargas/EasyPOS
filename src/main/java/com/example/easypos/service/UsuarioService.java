@@ -12,8 +12,7 @@ public class UsuarioService {
     @Autowired
     private IUsuarioRepository usuarioRepository;
 
-    public ResponseEntity<Usuario> registrarUsuario(Usuario usuario){
-        Usuario nuevoUsuario = usuarioRepository.save(usuario);
-        return ResponseEntity.ok(nuevoUsuario);
+    public Usuario registrarUsuario(Usuario usuario){
+        return usuarioRepository.save(usuario);
     }
 }

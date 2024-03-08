@@ -7,14 +7,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("usuario")
+@RequestMapping(value = "usuario")
 public class UsuarioController {
 
     @Autowired
     private UsuarioService usuarioService;
 
-    @PostMapping
-    public ResponseEntity<Usuario> crear(@RequestBody Usuario usuario) {
+    @PostMapping(value = "crear")
+    public Usuario crear(@RequestBody Usuario usuario) {
         System.out.println("Entró");
         return usuarioService.registrarUsuario(usuario);
     }

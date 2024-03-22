@@ -21,6 +21,11 @@ public class Venta {
     @JoinColumn(name = "IDUSUARIO")
     private Usuario idUsusario;
 
+    @ManyToOne
+    @JoinColumn(name = "IDDETALLEVENTA")
+    private Usuario idDetalleVenta;
+
+
     @Column(name = "TOTALVENTA")
     private long totalVenta;
 }

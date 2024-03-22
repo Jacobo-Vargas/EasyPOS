@@ -9,13 +9,18 @@ import jakarta.persistence.*;
 public class Usuario {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IDUSUARIO")
-    private Long idUsuario;
+    @Column(name = "NUMERODOCUMENTO", unique = true)
+    private Long numeroDocumento;
 
     @Column (name = "NOMBREUSUARIO", unique = true)
     private String nombreUsuario;
 
+    @Column (name = "CORREO", unique = true)
+    private String correo;
+
     @Column (name = "PASSWORD")
     private String password;
+
+    @Column (name = "ROL")
+    private String rol;
 }

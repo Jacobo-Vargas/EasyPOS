@@ -16,4 +16,9 @@ public class Factura {
     @ManyToOne
     @JoinColumn(name = "IDVENTA")
     private Venta idVenta;
+
+    @ManyToOne
+    @JoinColumn(name = "IDCLIENTE")
+    private Cliente idCliente;
+
 }

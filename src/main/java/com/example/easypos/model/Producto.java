@@ -19,13 +19,13 @@ public class Producto {
     @Column(name = "DESCRIPCIONPRODUCTO")
     private String descripcionProducto;
 
-    @Column(name = "CANTIDADPRODUCTO")
-    private int cantidadProducto;
-
     @Column(name = "VALORPRODUCTO")
     private double valorProducto;
 
     @Column(name = "VALORVENTAPRODUCTO")
     private double valorVentaProducto;
+
+    @Column(name = "STOCK")
+    private int stock;
 
 }

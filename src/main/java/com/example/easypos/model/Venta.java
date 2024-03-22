@@ -20,4 +20,7 @@ public class Venta {
     @ManyToOne
     @JoinColumn(name = "IDUSUARIO")
     private Usuario idUsusario;
+
+    @Column(name = "TOTALVENTA")
+    private long totalVenta;
 }

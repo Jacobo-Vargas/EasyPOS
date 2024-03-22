@@ -14,7 +14,7 @@ public class DetalleVenta {
     private Long idDetalleVenta;
 
     @ManyToOne
-    @Column(name = "IDPRODUCTO")
+    @JoinColumn(name = "IDPRODUCTO")
     private Producto idProducto;
 
     @Column(name = "CANTIDAD")

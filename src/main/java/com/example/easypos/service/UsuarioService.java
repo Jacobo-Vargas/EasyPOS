@@ -35,7 +35,7 @@ public class UsuarioService {
         }
     }
 
-    public ResponseEntity<String> actualizar(Usuario usuario){
+    public ResponseEntity<String> actualizar(Usuario usuario, Long id){
         if(usuarioRepository.existsById(usuario.getNumeroDocumento())){
             Usuario usuarioActualizado = usuarioRepository.save(usuario);
             return ResponseEntity.ok().body("Usuario actualizado con éxito. Nombre de usuario: " + usuarioActualizado.getNombreUsuario());

@@ -31,6 +31,6 @@ public class UsuarioController {
     }
 
     @PutMapping(value = "update/{id}")
-    public ResponseEntity<String> actualizar(@RequestBody Usuario usuario){ return usuarioService.actualizar(usuario);}
+    public ResponseEntity<String> actualizar(@RequestBody Usuario usuario, @PathVariable Long id){ return usuarioService.actualizar(usuario, id);}
 
 }
